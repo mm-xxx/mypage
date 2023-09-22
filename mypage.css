@@ -1,0 +1,25 @@
+body {
+  background-color: #1e619c;
+  color: azure;
+  width: 600px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  /* サイト全体のフォント指定 */
+  font-family: monospace;
+}
+
+a {
+    text-decoration: none; /*リンクの下線なし*/
+    color: azure; /*リンクの色指定*/
+  }
+a:hover{ /*リンクにカーソルあてた時*/
+  color:black;
+  font-size: 1em; /*文字サイズ1倍*/
+  }
+.hon{
+  font-size: 110%;
+}
+.hon:hover{
+  font-size: 110%;
+}
