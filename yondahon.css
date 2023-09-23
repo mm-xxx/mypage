@@ -8,3 +8,12 @@ body {
   /* サイト全体のフォント指定 */
   font-family: monospace ;
 }
+
+a {
+    text-decoration: none; /*リンクの下線なし*/
+    color: azure; /*リンクの色指定*/
+  }
+a:hover{ /*リンクにカーソルあてた時*/
+  color:black;
+  font-size: 1em; /*文字サイズ1倍*/
+  }
