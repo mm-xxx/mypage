@@ -1,0 +1,19 @@
+body {
+    background-color: #000000;
+    color: azure;
+    width: 600px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    /* サイト全体のフォント指定 */
+    font-family: monospace;
+  }
+  
+  a {
+      text-decoration: none; /*リンクの下線なし*/
+      color: rgb(190, 36, 36); /*リンクの色指定*/
+    }
+  a:hover{ /*リンクにカーソルあてた時*/
+    color:rgb(190, 36, 36);
+    font-size: 1em; /*文字サイズ1倍*/
+    }
