@@ -1,10 +1,12 @@
 body {
-  background-color: #1e619c;
+  background-color: #235255;
+    /*background: url(bg3.gif) scroll repeat center top;を入れたい*/
   color: azure;
-  width: 600px;
-  margin-top: 30px;
+  width: 900px;
+  margin-top: 0px;
   margin-left: auto;
   margin-right: auto;
+  margin:  0 auto;   /* 中央寄せ */
   /* サイト全体のフォント指定 */
   font-family: monospace;
 }
@@ -22,4 +24,42 @@ a:hover{ /*リンクにカーソルあてた時*/
 }
 .hon:hover{
   font-size: 110%;
+}
+
+.kakusiteru{
+  color: #ffffff00;
+}
+
+/* 全体の指定 */
+.zentai {
+  width: 850px;
+  /* 最初の色color="#1e619c" */
+  background-color: #ffffff50;
+  /* 水平方向の中央揃え */
+  padding: 20px;
+}
+
+.top-box{
+  margin:  0px 0px;  /* 中央寄せ */
+}
+.top-box-logo{
+  width: 450px;
+  height: 120px;
+}
+
+.main1{
+  display: flex;
+}
+.lain{
+    margin:  -30px -20px;
+}
+.link{
+    margin: 30px 30px;
+}
+
+.main2{
+  margin: 20px 20px;
+}
+.tweet-area{
+  margin: 0px 10px;
 }
