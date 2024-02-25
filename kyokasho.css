@@ -1,0 +1,30 @@
+body {
+    background-color: #39803e;
+    color: azure;
+    width: 600px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    /* サイト全体のフォント指定 */
+    font-family: monospace;
+  }
+  
+  a {
+      text-decoration: none; /*リンクの下線なし*/
+      color: azure; /*リンクの色指定*/
+    }
+  a:hover{ /*リンクにカーソルあてた時*/
+    color:black;
+    font-size: 1em; /*文字サイズ1倍*/
+    }
+
+    span {
+      margin-left: 1rem;
+    }
+.zentai{
+    display: flex;
+}
+
+.hon2{
+    margin: 0px 20px;
+}
