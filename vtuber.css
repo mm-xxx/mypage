@@ -21,3 +21,13 @@ body {
     span {
       margin-left: 1rem;
     }
+
+    .main1{
+      display: flex;
+    }
+    .pokopea{
+        margin:  30px 30px;
+    }
+    .mito{
+        margin: 30px 30px;
+    }
