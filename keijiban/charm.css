@@ -1,0 +1,228 @@
+@charset "shift_jis";
+
+* { margin: 0; padding: 0; }
+body {
+	font-size: 80%;
+	background: #e1f0f0;
+	font-family: Verdana,"MS PGothic",Osaka,Arial,sans-serif;
+}
+/* �t�H�[������ */
+input {
+	padding: 3px !important;
+}
+div.top-btn {
+	margin: 1em auto;
+	width: 100%;
+	text-align: left;
+}
+div.top-btn input {
+	width: 80px;
+}
+/* �f�����C������ */
+div.bbs-main {
+	width: 85%;
+	margin: 0 auto;
+	text-align: center;
+}
+/* ������ */
+.ta-c {
+	text-align: center;
+}
+div.panel {
+	width: 100%;
+	text-align: left;
+	margin: 0 auto;
+}
+div.panel input {
+	width: 80px;
+	margin-left: 3px;
+}
+
+/* �f����TOP */
+div#message {
+	float: left;
+	width: 30%;
+}
+div#bbsform {
+	float: left;
+	width: 70%;
+}
+div#clear {
+	clear: both;
+}
+div.bbsmsg {
+	width: 100%;
+	color: #007339;
+	margin-top: 4em;
+	vertical-align: middle;
+	text-align: center;
+	padding: 1em;
+}
+div.bbs-head {
+	width: 100%;
+	text-align: center;
+	background: #fff;
+	border: 1px solid #3399cc;
+	padding: 5px;
+}
+
+/* ���e�t�H�[�� */
+table.bbs-form {
+	margin: 1em auto;
+}
+table.bbs-form th, table.bbs-form td {
+	padding: 1px;
+	background: #fff;
+	white-space: nowrap;
+	text-align: left;
+}
+table.bbs-form td img {
+	border: none;
+	margin-right: 4px;
+}
+textarea.text-com {
+	width: 28em;
+	height: 7em;
+}
+input.bbs-submit {
+	width: 70px;
+}
+div.bbs-art {
+	width: 100%;
+	text-align: left;
+	background: #fff;
+	padding: 8px;
+	margin: 0 auto;
+	border-bottom: 1px solid #3399CC;
+	border-right: 1px solid #3399CC;
+	border-left: 1px solid #3399CC;
+}
+div.bbs-com {
+	margin: 8px 0;
+}
+div.bbs-art img {
+	vertical-align: middle;
+	margin: 0 4px;
+}
+b.bbs-sub {
+	color: #006f37;
+}
+table.bbs-form span {
+	font-size: 90%;
+	color: #007339;
+}
+div.res {
+	margin-left: 2em;
+}
+
+/* ���ӎ��� */
+div.note { width: 97%;
+	background: #fff;
+	border: 1px solid gray;
+	margin: 1em auto;
+	padding: 7px;
+	text-align: left;
+}
+div.note ul {
+	margin-left: 1em;
+	line-height: 150%;
+}
+div.note p {
+	margin-bottom: 1em;
+	color: #007339;
+}
+p.close {
+	text-align: center;
+	margin-top: 1.5em;
+}
+p.close input {
+	width: 80px;
+}
+
+/* ������� */
+div#find-list {
+	margin: 1em;
+}
+div.find-ttl {
+	margin: 1em 0;
+	border-left: 4px solid #0080c0;
+	border-bottom: 1px solid #ccc;
+	padding: 5px 8px;
+	font-weight: bold;
+	font-size: 120%;
+}
+ul.find-msg {
+	padding: 1em;
+	margin: 1em;
+}
+div.find-art {
+	margin: 1em;
+	border: 1px solid #306161;
+	background: #fff;
+	padding: 8px;
+}
+div.find-com {
+	margin: 10px;
+}
+div.hit-msg {
+	margin: 1em;
+}
+
+/* ������� */
+div.msg {
+	margin: 4em auto 2em auto;
+	border-top: 1px dotted #000;
+	border-bottom: 1px dotted #000;
+	color: #008241;
+	width: 250px;
+	padding: 2em;
+}
+/* �G���[��� */
+div.err {
+	margin: 4em auto 2em auto;
+	border-top: 1px dotted #000;
+	border-bottom: 1px dotted #000;
+	color: #ca0000;
+	width: 250px;
+	padding: 2em;
+}
+div.err h3 {
+	margin-bottom: 2em;
+}
+
+/*
+	�y�[�W����
+	�Q�l: http://css-happylife.com/template/page_nav/
+*/
+ul.pager {
+	margin: 0 0 10px;
+	padding: 10px 10px 5px;
+}
+ul.pager li {
+	display: inline;
+	margin: 0 2px;
+	padding: 0;
+}
+ul.pager li span {
+	display: inline-block;
+	margin-bottom: 5px;
+	padding: 3px 6px;
+	background: #a7a7a7;
+	color: #fff;
+	border: 1px solid #3e8080;
+	text-decoration: none;
+	vertical-align: middle;
+}
+ul.pager li a {
+	display: inline-block;
+	margin-bottom: 5px;
+	padding: 3px 6px;
+	background: #fff;
+	border: 1px solid #3e8080;
+	text-decoration: none;
+	vertical-align: middle;
+}
+ul.pager li a:hover {
+	background: #eeeff7;
+	border-color: #00f;
+}
