@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="Shift_JIS"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=shift_jis" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta http-equiv="content-style-type" content="text/css" />
+<link rel="stylesheet" href="charm.css" type="text/css" media="all" />
+<script type="text/javascript">
+<!--
+function popup(url) {
+	window.open(url, "notice", "width=550,height=300,scrollbars=1");
+}
+function face(smile) {
+    bbscom = document.bbsform.comment.value;
+    document.bbsform.comment.value = bbscom + smile;
+}
+// -->
+</script>
+<title>掲示板</title>
+</head>
+<body>
+
+<div class="ta-c">
+<div class="bbs-main">
+
+<div class="top-btn">
+<input type="button" value="戻る" onclick="window.open('!homepage!','_top')" />
+<input type="button" value="検索"  onclick="window.open('!bbs_cgi!?mode=find','_self')" />
+<input type="button" value="留意事項"  onclick="popup('!bbs_cgi!?mode=note')" />
+<input type="button" value="管理" onclick="window.open('!admin_cgi!','_self')" />
+</div>
+
+<div class="bbs-head">
+<div id="message">
+	<div class="bbsmsg">!message!</div>
+</div>
+<div id="bbsform">
+<form action="!bbs_cgi!" method="post" name="bbsform">
+<input type="hidden" name="mode" value="reg_log" />
+<table class="bbs-form">
+<tr>
+	<th>お名前</th>
+	<td><input type="text" name="name" size="25" value="!form_name!" /></td>
+</tr><tr>
+	<th>タイトル</th>
+	<td>
+		<input type="text" name="sub" size="25" />
+		<input type="submit" value="投稿" class="bbs-submit" />
+	</td>
+</tr><tr>
+	<th>コメント</th>
+	<td>
+		!icon!<br />
+		<textarea name="comment" class="text-com"></textarea>
+	</td>
+</tr><tr>
+	<th>文字色</th>
+	<td colspan="3">!color!</td>
+</tr><tr>
+	<th>削除キー</th>
+	<td>
+		<input type="password" name="pwd" size="4" />
+		<span>（記事削除用）</span>&nbsp;
+		<b>画像認証</b>
+		<input type="text" name="captcha" size="6" style="ime-mode:inactive" maxlength="8" />
+		<span>（右画像の数字入力）</span>
+		<img src="!captcha_cgi!?!str_crypt!" alt="投稿キー" />
+		<input type="hidden" name="str_crypt" value="!str_crypt!" />
+	</td>
+</tr>
+</table>
+</form>
+</div>
+<div id="clear"></div>
+</div>
+
+<!-- loop_begin -->
+<div class="bbs-art">
+[!num!] <b class="bbs-sub">!sub!</b> 投稿者：<b>!name!</b> 日時：!date!
+<div class="bbs-com">!comment!</div>
+<!-- res -->
+</div>
+<!-- loop_end -->
+
+<p class="pg-btn">!page_btn!</p>
+
+<form action="!bbs_cgi!" method="post">
+<input type="hidden" name="mode" value="del_log" />
+No. <input type="text" name="num" size="2" />
+Pass <input type="password" name="pwd" size="4" />
+<input type="submit" value="削除" />
+</form>
+
+</div>
+</div>
+</body>
+</html>
+
